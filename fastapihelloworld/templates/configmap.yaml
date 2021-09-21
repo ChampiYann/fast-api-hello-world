@@ -5,4 +5,4 @@ metadata:
   labels:
     {{- include "fastapihelloworld.labels" . | nindent 4 }}
 data:
-  greeting.name: Frank
+  greeting.name: "{{ .Values.greeting.name }}"
